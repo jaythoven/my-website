@@ -260,7 +260,7 @@ transition: all 0.3s ease;
     margin-bottom: 32px;
 }
 .main__content h2 {
-    font-size: 4rem;
+    font-size: 1.2rem;
     background: #ee0979;
     background: -webkit-linear-gradient(to right, #fff, #e74c3c);
     background: linear-gradient(to right, #fff, #e74c3c);
@@ -272,8 +272,8 @@ transition: all 0.3s ease;
 }
 .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 .main__btn {
     font-size: 1.8rem;
@@ -327,3 +327,157 @@ transition: all 0.3s ease;
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
+.fa-layer-group, .fa-users {
+    font-size: 14rem;
+}
+#card-2 {
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+}
+
+/* mobile responsiveness */
+
+@media screen and (max-width: 1000px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+    .main__img--container {
+        display: flex;
+        justify-context: center;
+    }
+    .main__img--card {
+        height: 425px;
+        width: 425px;
+    }
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .main__content h2 {
+        font-size: 3rem;
+    }
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .main__img--card {
+        width: 250px;
+        height: 250px;
+    }
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .main__content h2 {
+        font-size: 2rem;
+    }
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/* projects section */
+
+.projects {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+.projects h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #fff, #e74c3c 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+.projects__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.projects__card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00bdbe, #fc00ff);
+    transition: 0.3s ease-in;
+}
+/* can also give each box individual color *can give directions to gradient as below*
+    .projects__card:nth-child(2) {
+    background: linear-gradient(375deg, #1565C0, #b92b27);
+
+}
+*/
+.projects__card h2 {
+    text-align: center;
+}
+.projects__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+.projects__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.projects__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+.projects__card button:hover {
+    cursor: pointer;
+}
+.projects__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+    .projects__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .projects__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* footer */
