@@ -436,7 +436,6 @@ transition: all 0.3s ease;
 /* can also give each box individual color *can give directions to gradient as below*
     .projects__card:nth-child(2) {
     background: linear-gradient(375deg, #1565C0, #b92b27);
-
 }
 */
 .projects__card h2 {
