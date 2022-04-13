@@ -1,3 +1,10 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
+
+// Display mobile menu
+const mobileMenu = () => {
+    menu.classList.toggle('is-active')
+    menuLinks.classList.toggle('active')
+}
+
+menu.addEventListener('click', mobileMenu)
