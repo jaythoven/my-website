@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/c5c3d0e198.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <title>My Personal Website</title>
@@ -14,28 +15,28 @@
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
+          <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a href="#home" class="navbar__links" id="home-page">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="home-page">About Me</a>
+            <a href="#about" class="navbar__links" id="about-page">About Me</a>
           </li>
           <li class="navbar__item">
-            <a href="#projects" class="navbar__links" id="home-page">Projects</a>
+            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
           </li>
           <li class="navbar__btn">
-            <a href="#contact" class="button" id="contact">Contact</a>
-          </li>
-          </li>          
+            <a href="#contact" class="button" id="contact-page">Contact</a>
+          </li>        
         </ul>
       </div>
     </nav>
     <!-- hero section -->
     <div class="hero" id="home">
       <div class="hero__container">
-        <h1 class="hero__heading">To New <span>Beginnings</span></h1>
+        <h1 class="hero__heading">To a New <span>Start</span></h1>
         <p class="hero__description">& Unlimitied Possibilities</p>
         <button class="main__btn"><a href="#">Explore</a></button>
       </div>
@@ -44,15 +45,14 @@
     <div class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card"></div>
+          <div class="main__img--card"><i class="fa-brands fa-linkedin"></i></div>
         </div>
         <div class="main__content">
           <h1>A bit about myself...</h1>
-          <h2>I am simply an aspiring software engineer, but furthermore, I am forever a student.</h2>
-          <p>Currently an amateur in all things SE related. Because I believe in full transparency, I originally started my journey as an aspiring nurse.
-            When I realized that perhaps my passion was not in the medical sciences, I had to rethink what I wanted my life's purpose to be.
-
-          </p>
+          <h2>I am simply an aspiring (novice) software engineer, but more importantly,<br>I am forever a student.</h2>
+          <p>Currently an amateur with a few technologies related to SE. Because I believe in full transparency, I originally 
+            started my journey with hopes of becoming a nurse. When I realized that perhaps my passion was not in the medical 
+            sciences, I had to rethink what I wanted my life's purpose to be.</p>
           <button class="main__btn"><a href="#">Find Out More</a></button>
         </div>
       </div>
@@ -84,6 +84,35 @@
       </div>    
     </div>
     <!-- contact -->
+    <div class="container" id="contact">
+      <div class="form">
+        <div class="contact-info"></div>
+
+        <div class="contact-form"></div>
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html">
+            <h3 class="title">Contact Me</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input">
+              <label for="">Username</label>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input">
+              <label for="">Email</label>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+            </div>
+            <input type="submit" value="Send" class="send__btn"/>
+          </form>
+      </div>
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- ex: <i class="fa-brands fa-linkedin"></i> *this is for LINKED IN icon -->
