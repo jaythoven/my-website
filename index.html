@@ -33,7 +33,9 @@
         </ul>
       </div>
     </nav>
+    
     <!-- hero section -->
+    
     <div class="hero" id="home">
       <div class="hero__container">
         <h1 class="hero__heading">To a New <span>Start</span></h1>
@@ -41,11 +43,15 @@
         <button class="main__btn"><a href="#">Explore</a></button>
       </div>
     </div>
+
     <!-- about section -->
+
     <div class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="main__img--card">
+            <i class="fa-solid fa-typewriter"></i>
+          </div>
         </div>
         <div class="main__content">
           <h1>A bit about myself...</h1>
@@ -57,7 +63,9 @@
         </div>
       </div>
     </div>
+
     <!-- projects -->
+
     <div class="projects" id="projects">
       <h1>My Projects</h1>
       <div class="projects__wrapper">
@@ -83,34 +91,57 @@
         </div>
       </div>    
     </div>
+
     <!-- contact -->
+
     <div class="container" id="contact">
       <div class="form">
-        <div class="contact-info"></div>
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            I'm just one form away! Also feel free to connect with me 
+            by the methods below.
+          </p>
 
-        <div class="contact-form"></div>
+          <div class="social-media">
+            <p>Connect with me :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/jaythoven" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html">
-            <h3 class="title">Contact Me</h3>
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input">
+              <input type="text" name="name" class="input" />
               <label for="">Username</label>
+              <span>Username</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input">
+              <input type="email" name="email" class="input" />
               <label for="">Email</label>
+              <span>Email</span>
             </div>
             <div class="input-container textarea">
               <textarea name="message" class="input"></textarea>
               <label for="">Message</label>
+              <span>Message</span>
             </div>
-            <input type="submit" value="Send" class="send__btn"/>
+            <input type="submit" value="Send" class="btn" />
           </form>
+        </div>
       </div>
     </div>
-    
     <script src="script.js"></script>
   </body>
 </html>
